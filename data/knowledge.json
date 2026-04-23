@@ -1,0 +1,13 @@
+{
+  "pricing": {
+    "basic": "Basic Plan: $29/month, 10 videos/month, 720p resolution",
+    "pro": "Pro Plan: $79/month, Unlimited videos, 4K resolution, AI captions"
+  },
+  "features": {
+    "autostream": "AutoStream is an AI-powered platform that converts social media leads into customers using automated video editing."
+  },
+  "policies": {
+    "refund": "No refunds after 7 days",
+    "support": "24/7 support available only on Pro plan"
+  }
+}
