@@ -8,12 +8,12 @@ Social-to-Lead Agentic Workflow
 
 AutoStream AI Agent is a conversational AI system designed to convert social media conversations into qualified business leads.
 
-This project demonstrates a real-world GenAI workflow including:
+---
 
-- Intent Detection
-- RAG (Retrieval-Augmented Generation)
-- High-Intent Lead Identification
-- Lead Capture (Tool Execution)
+🌐 Live Demo
+
+👉 Try the app here:
+https://autostream-ai-agent.streamlit.app/
 
 ---
 
@@ -65,8 +65,8 @@ High intent is detected using:
 
 Example:
 
-User: Tell me pricing  
-User: That sounds good  
+User: Tell me pricing
+User: That sounds good
 → Detected as HIGH INTENT
 
 ---
@@ -87,7 +87,7 @@ app/
 ├── config.py
 ├── main.py
 ├── ui.py
-│
+
 data/
 └── knowledge.json
 
@@ -116,44 +116,41 @@ Includes:
 - Language: Python 3.9+
 - Framework: Streamlit
 - LLM: OpenRouter / GPT / Gemini (optional fallback)
-- Architecture: Agentic Workflow (Rule-based + RAG + Tool Execution)
+- Architecture: Agentic Workflow
 
 ---
 
 🧪 How to Run
 
 1️⃣ Install Dependencies
-
 pip install -r requirements.txt
 
 2️⃣ Run CLI Agent
-
 python -m app.main
 
-3️⃣ Run UI (Recommended)
-
+3️⃣ Run UI
 streamlit run app/ui.py
 
 ---
 
 💬 Example Conversation
 
-User: Hi  
-Agent: Welcome to AutoStream 🚀  
+User: Hi
+Agent: Welcome to AutoStream 🚀
 
-User: Tell me pricing  
-Agent: Shows pricing plans  
+User: Tell me pricing
+Agent: Shows pricing plans
 
-User: I want to buy  
-Agent: Please tell me your name  
+User: I want to buy
+Agent: Please tell me your name
 
-User: John  
-Agent: Enter your email  
+User: John
+Agent: Enter your email
 
-User: john@gmail.com  
-Agent: Which platform do you use?  
+User: john@gmail.com
+Agent: Which platform do you use?
 
-User: YouTube  
+User: YouTube
 
 → Lead captured successfully
 
@@ -162,21 +159,15 @@ User: YouTube
 🔧 Tool Execution
 
 def mock_lead_capture(name, email, platform):
-    print(f"Lead captured successfully: {name}, {email}, {platform}")
-
-⚠️ Triggered only after collecting all details
+print(f"Lead captured successfully: {name}, {email}, {platform}")
 
 ---
 
 🧠 State Management
 
-The agent maintains:
-
 - Last intent
 - Lead capture stage
 - Partial user data
-
-Ensures smooth multi-turn conversation (5–6 turns)
 
 ---
 
@@ -187,17 +178,15 @@ Ensures smooth multi-turn conversation (5–6 turns)
 ✔ Intent Classification
 ✔ Tool Execution
 ✔ UI Interface
-✔ requirements.txt
-✔ README.md
 
 ---
 
 🚀 Future Improvements
 
-- Database integration (SQLite / MongoDB)
+- Database integration
 - Dashboard for leads
-- Voice input (speech-to-text)
-- Advanced UI (chat animations)
+- Voice input
+- Advanced UI
 - LLM fine-tuning
 
 ---
@@ -218,5 +207,3 @@ This project demonstrates how a Conversational AI Agent can:
 - Capture leads automatically
 
 Making it a real-world AI-powered sales assistant.
-
----
